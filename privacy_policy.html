@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Privacy Policy for Locarby</title>
+    <meta
+            name="description"
+            content="How the Locarby iOS app handles your data."
+    >
+
+    <style>
+        :root {
+          color-scheme: light dark;
+          --bg: #ffffff;
+          --fg: #1d1d1f;
+          --muted: #6e6e73;
+          --link: #0a66d8;
+          --rule: #e5e5ea;
+          --code: #f2f2f7;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          :root {
+            --bg: #000000;
+            --fg: #f5f5f7;
+            --muted: #a1a1a6;
+            --link: #4da3ff;
+            --rule: #2c2c2e;
+            --code: #1c1c1e;
+          }
+        }
+
+        body {
+          margin: 0;
+          background: var(--bg);
+          color: var(--fg);
+          font: 17px/1.6 -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        main {
+          max-width: 720px;
+          margin: 0 auto;
+          padding: 48px 16px 64px;
+        }
+
+        h1 {
+          font-size: 2rem;
+          line-height: 1.2;
+          margin: 0 0 8px;
+        }
+
+        h1 + p {
+          color: var(--muted);
+          margin-top: 0;
+        }
+
+        h2 {
+          font-size: 1.3rem;
+          margin: 40px 0 12px;
+          padding-top: 24px;
+          border-top: 1px solid var(--rule);
+        }
+
+        a {
+          color: var(--link);
+        }
+
+        code {
+          background: var(--code);
+          padding: 1px 5px;
+          border-radius: 4px;
+          font-size: 0.9em;
+        }
+
+        ul {
+          padding-left: 1.3em;
+        }
+
+        li {
+          margin: 6px 0;
+        }
+    </style>
+</head>
+
+<body>
+<main>
+    <h1>Privacy Policy for Locarby</h1>
+    <p><em>Last updated: 17 October 2026</em></p>
+
+    <p>
+        Locarby ("the app", "we", or "our") is a mobile app that helps
+        you find gyms, cafes, restaurants, and other places near an
+        address you choose. This Privacy Policy explains what data
+        the app uses, how it is processed, and the choices available
+        to you.
+    </p>
+
+    <h2>What We Collect and How We Use It</h2>
+
+    <p>
+        <strong>Location and addresses.</strong>
+        To run a search, the app uses Apple's location services built
+        into iOS to convert an address you enter into map coordinates.
+        When you tap "Use current location", your current location is
+        used to look up its street address. The resulting coordinates,
+        search radius, and selected place types are then sent to the
+        Google Places API to find places. These requests go directly
+        from your device to Apple and Google. Our statistics server
+        does not receive your exact location or the address text you
+        entered.
+    </p>
+
+    <p>
+        <strong>Recent addresses and settings.</strong>
+        The last five addresses you search are saved on your device
+        only, using iOS local app storage (<code>UserDefaults</code>).
+        Your app settings, including the light/dark theme and your
+        search-statistics preference, are stored locally as well.
+        This locally stored data is not sent to our server or to
+        third parties as stored data, and it is deleted when you
+        uninstall the app.
+    </p>
+
+    <p>
+        <strong>Search statistics (optional).</strong>
+        The first time you run a search, the app asks whether you
+        want to share search statistics. Only if you choose
+        <strong>Allow</strong> does the app send the following
+        information to a server we operate:
+    </p>
+
+    <ul>
+        <li>
+            The approximate area searched, represented by a grid cell
+            of about 1 km. The exact coordinates and address text are
+            not sent to our statistics server.
+        </li>
+        <li>The types of places you searched for.</li>
+        <li>The time of the request.</li>
+    </ul>
+
+    <p>
+        Our server aggregates these requests into daily counters
+        by grid cell and place type (for example, the number of
+        searches for cafes in a particular area on a given day).
+        We use these counters to understand where people search
+        for places. The statistics are not linked to your name,
+        a user account, or a device identity.
+    </p>
+
+    <p>
+        You can change your choice at any time using
+        <strong>Share search statistics</strong> at the bottom of
+        the search screen. When this setting is off, the app sends
+        no new search statistics to our server. Turning it off does
+        not automatically delete statistics that have already been
+        aggregated.
+    </p>
+
+    <p>
+        <strong>App verification and abuse prevention.</strong>
+        To help verify that statistics requests come from a
+        legitimate Locarby app installation, the app uses Apple's
+        App Attest service. When statistics are first sent, the app
+        creates a random key for that installation. Our server stores
+        the public part of the key and the time of its last request
+        to verify requests and limit them to one per second.
+        This key is not combined with the search statistics.
+    </p>
+
+    <p>
+        When a request reaches our server, the server also receives
+        its IP address. We use the IP address only temporarily,
+        in memory, to limit abuse. We do not store or log it.
+    </p>
+
+    <p>
+        <strong>Retention of statistics.</strong>
+        Aggregated search counters are retained for 12 months and
+        then automatically deleted. An installation's App Attest
+        public key is also deleted if it has not sent a request
+        for 12 months. In areas with very few searches, aggregated
+        statistics may reflect activity from only a small number
+        of people. We keep these statistics private and do not
+        publish them.
+    </p>
+
+    <p>
+        We process optional search statistics based on your consent.
+        You can withdraw that consent at any time by turning off
+        the search-statistics setting.
+    </p>
+
+    <p>
+        <strong>Other personal information.</strong>
+        We do not ask you to provide your name, email address,
+        contacts, or photos. The app does not have user accounts
+        or sign-in, and it does not use advertising SDKs or tracking
+        identifiers.
+    </p>
+
+    <h2>Third-Party Services</h2>
+
+    <p>
+        <strong>Google Places API.</strong>
+        Locarby uses the Google Places API to search for and display
+        places, ratings, and, where available, price or fuel
+        information. When you run a search, your chosen location,
+        search radius, and selected place types are sent to Google
+        to fulfil the request. Google's handling of data is governed
+        by
+        <a href="https://policies.google.com/privacy">
+            Google's Privacy Policy
+        </a>.
+    </p>
+
+    <p>
+        <strong>Apple location services.</strong>
+        Locarby uses Apple's location services built into iOS to
+        convert entered addresses into coordinates and to look up
+        an address for your current location. Apple's handling of
+        data is governed by
+        <a href="https://www.apple.com/legal/privacy/">
+            Apple's Privacy Policy
+        </a>.
+    </p>
+
+    <p>
+        <strong>Maps apps.</strong>
+        If you tap "Open in Apple Maps" or "Open in Google Maps",
+        the selected place's location is passed to the relevant
+        Maps app. The receiving app handles that information under
+        its own terms and privacy policy.
+    </p>
+
+    <p>
+        <strong>Our hosting provider.</strong>
+        The optional search statistics described above are sent
+        to a server we operate using a hosting provider. The
+        provider processes information as needed to host and
+        operate that server on our behalf.
+    </p>
+
+    <h2>Your Choices</h2>
+
+    <ul>
+        <li>
+            <strong>Location access:</strong>
+            You can change or revoke location permission in
+            Settings → Privacy &amp; Security → Location Services →
+            Locarby. You can still search by entering an address
+            manually.
+        </li>
+        <li>
+            <strong>Precise Location:</strong>
+            You can disable Precise Location in the same settings
+            screen. Locarby will use the approximate location
+            provided by iOS instead.
+        </li>
+        <li>
+            <strong>Recent addresses:</strong>
+            On the search location screen, swipe left on an address
+            to remove it, or tap "Clear" at the top of the Recent
+            list to remove all recent addresses.
+        </li>
+        <li>
+            <strong>Search statistics:</strong>
+            You decide whether to share statistics when the app
+            first asks. You can change this choice at any time using
+            "Share search statistics" at the bottom of the search
+            screen.
+        </li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+
+    <p>
+        Locarby is not directed at children, and we do not knowingly
+        collect personal information directly from children.
+    </p>
+
+    <h2>Changes to This Privacy Policy</h2>
+
+    <p>
+        We may update this Privacy Policy from time to time.
+        When we make changes, we will update the "Last updated"
+        date on this page. If a change materially affects how we
+        process personal data, we will provide additional notice
+        or obtain consent where required by applicable law.
+    </p>
+
+    <h2>Contact</h2>
+
+    <p>
+        If you have questions about this Privacy Policy or
+        Locarby's data practices, contact us at
+        <a href="mailto:zawrao@gmail.com">zawrao@gmail.com</a>.
+    </p>
+</main>
+</body>
+</html>
